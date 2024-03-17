@@ -38,6 +38,7 @@ const NavBarComponent = () => {
 				{navBars?.map((items: any, index: number) => {
 					return (
 						<NavbarCard
+							key={items.text + "-" + index}
 							icons={items.icons}
 							text={items.text}
 							isActive={items.isActive}
