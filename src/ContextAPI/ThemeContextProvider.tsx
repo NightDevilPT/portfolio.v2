@@ -31,7 +31,7 @@ export const ThemeProvider = ({ children }: Children) => {
 		);
 	};
 
-	useEffect(()=>{toggleTheme(Theme.Night)},[])
+	useEffect(()=>{toggleTheme(Theme.Dark)},[])
 
 	return (
 		<ThemeContext.Provider value={{ theme, toggleTheme }}>

@@ -4,6 +4,7 @@ import "./globals.css";
 import ProvidersLayout from "@/layouts/ProvidersLayout";
 import PersonalInformationComponent from "@/components/PersonalInfoComponent";
 import NavBarComponent from "@/components/NavBarComponent";
+import ThemeController from "@/components/ThemeController";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
 			<body className={`bg-base-300 transition-all duration-300`}>
 				<ProvidersLayout>
 					<div className="relative w-full h-full overflow-x-hidden overflow-y-auto py-10">
+						<ThemeController />
 						<section
 							className={`container h-full grid grid-cols-12 gap-5 max-lg:gap-5 max-lg:grid-flow-row max-lg:place-items-center max-lg:place-content-start max-sm:px-5 mb-28`}
 						>
