@@ -14,7 +14,7 @@ const ThemeController = () => {
 				className="theme-controller"
 				value="synthwave"
 				onChange={()=>{
-					toggleTheme(theme===Theme.Dark?Theme.Cyberpunk:Theme.Dark)
+					toggleTheme(theme===Theme.Dark?Theme.Garden:Theme.Dark)
 				}}
 			/>
 

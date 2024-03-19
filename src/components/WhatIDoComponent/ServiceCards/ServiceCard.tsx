@@ -1,57 +1,24 @@
-"use client";
-
-import React, { ReactNode, useEffect, useRef, useState } from "react";
-import { IoIosArrowDown } from "react-icons/io";
-
 interface IProps {
-	children: ReactNode;
 	title: string;
-	height: string;
 	icons: any;
-	showCollapse: boolean;
+	description: string;
 }
-
-const ServiceCard = ({
-	children,
-	title,
-	height,
-	icons,
-	showCollapse,
-}: IProps) => {
-	const [show, setShow] = useState<boolean>(false);
-	// const showRef = useRef<HTMLDivElement | null>(null);
-	// const isComponentMounted = useRef(true);
-
-	// useOutsideClick(showRef, () => {
-	// 	if (show) {
-	// 		setShow(false);
-	// 	}
-	// });
+export const ServiceCard = ({ icons, title, description }: IProps) => {
 	return (
 		<div
-			className={`w-full ${
-				show ? height : `${showCollapse ? "h-12" : height}`
-			} flex justify-start items-start flex-col transition-all duration-300 overflow-hidden bg-base-200 rounded-md cursor-pointer`}
+			className={`w-full p-3 h-auto rounded bg-base-200 flex justify-start items-start flex-col gap-2`}
 		>
-			<button
-				className="w-full h-12 min-h-12 flex justify-start items-center gap-3 px-3 relative hover:text-primary"
-				onClick={() => {
-					showCollapse && setShow(!show);
-				}}
+			{icons}
+			<div
+				className={`flex-1 h-auto flex justify-start items-start flex-col gap-3`}
 			>
-				{icons}
-				<h1 className="font-bold text-base">{title}</h1>
-				{showCollapse && (
-					<IoIosArrowDown
-						className={`w-5 h-5 absolute right-3 ${
-							show ? "rotate-180" : "rotate-0"
-						} transition-all duration-300`}
-					/>
-				)}
-			</button>
-			{children}
+				<h1 className={` text-xl font-mandali font-bold relative after:absolute after:content-[''] after:-bottom-1 after:left-0 after:w-20 after:h-1 after:rounded after:bg-primary`}>
+					{title}
+				</h1>
+				<span className={`text-sm font-mandali`}>
+					{description}
+				</span>
+			</div>
 		</div>
 	);
 };
-
-export default ServiceCard;

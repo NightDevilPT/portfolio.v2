@@ -1,5 +1,5 @@
 import React from "react";
-import ServiceCard from "./ServiceCards/ServiceCard";
+import { ServiceCard } from "./ServiceCards/ServiceCard";
 import { FaFileCode, FaLaptopCode } from "react-icons/fa";
 
 const WhatIDoComponent = () => {
@@ -14,27 +14,20 @@ const WhatIDoComponent = () => {
 			</h1>
 
 			<div
-				className={`w-full h-auto mt-3 grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-5`}
+				className={`w-full h-auto mt-3 grid grid-cols-[repeat(auto-fit,_minmax(320px,1fr))] gap-3`}
 			>
 				<ServiceCard
 					title="Frontend Development"
-					height="h-[200px]"
-					icons={<FaLaptopCode className={`w-6 h-6 rounded`} />}
-					showCollapse={false}
-				>
-					<div className={`w-full h-auto flex justify-start items-start gap-1 px-3`}>
-						<span className="w-full h-auto text-xs">As a frontend developer i am using this technologies.</span>
-					</div>
-				</ServiceCard>
-
+					description="As a frontend developer, I utilize these technologies to enhance website usability and create a more user-friendly experience."
+					icons={
+						<FaLaptopCode className={`w-9 h-auto text-primary`} />
+					}
+				/>
 				<ServiceCard
 					title="Backend Development"
-					height="h-[200px]"
-					icons={<FaFileCode className={`w-6 h-6 rounded`} />}
-					showCollapse={false}
-				>
-					<div></div>
-				</ServiceCard>
+					description="I specialize in backend development, crafting robust solutions for web applications. Let's elevate your digital projects together!"
+					icons={<FaFileCode className={`w-9 h-auto text-primary`} />}
+				/>
 			</div>
 		</div>
 	);

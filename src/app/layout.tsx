@@ -22,10 +22,10 @@ export default function RootLayout({
 		<html lang="en">
 			<body className={`bg-base-300 transition-all duration-300`}>
 				<ProvidersLayout>
-					<div className="relative w-full h-full overflow-x-hidden overflow-y-auto py-10">
+					<div className="w-full h-full overflow-x-hidden overflow-y-auto py-10">
 						<ThemeController />
 						<section
-							className={`container h-full grid grid-cols-12 gap-5 max-lg:gap-5 max-lg:grid-flow-row max-lg:place-items-center max-lg:place-content-start max-sm:px-5 mb-28`}
+							className={`container h-full grid grid-cols-12 gap-5 max-lg:gap-5 max-lg:grid-flow-row max-lg:place-items-center max-lg:place-content-start max-sm:px-5`}
 						>
 							<PersonalInformationComponent />
 							<div

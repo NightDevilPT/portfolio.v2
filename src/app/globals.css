@@ -9,9 +9,8 @@ body{
 	width: 100%;
 	height: 100vh;
 	overflow: hidden;
+	font-family: "Mandali", "sans-serif";
 }
-
-
 
 .border-gradient::after{
 	position: absolute;
