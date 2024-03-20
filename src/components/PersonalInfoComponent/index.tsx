@@ -41,10 +41,10 @@ const personalInformation = {
 const PersonalInformationComponent = () => {
 	return (
 		<section
-			className={`sticky top-10 left-0 max-lg:relative max-lg:top-0 col-span-3 h-auto max-lg:w-full max-lg:col-span-full`}
+			className={`relative left-0 max-lg:relative max-lg:top-0 col-span-3 h-auto max-lg:w-full max-lg:col-span-full`}
 		>
 			<div
-				className={`w-full h-auto flex justify-center items-center flex-col gap-4 p-3 bg-base-100 rounded shadow-lg shadow-black/30`}
+				className={`sticky top-0 w-full h-auto flex justify-center items-center flex-col gap-4 p-3 bg-base-100 rounded shadow-lg shadow-black/30`}
 			>
 				{/* -------[ Avtar Intro Frame ]------ */}
 				<div className={`w-full flex justify-center items-center flex-col gap-3 max-lg:flex-row max-lg:items-start max-lg:justify-start max-[500px]:flex-col max-[500px]:justify-center max-[500px]:items-center`}>
@@ -68,7 +68,7 @@ const PersonalInformationComponent = () => {
 						>
 							{personalInformation.profession}
 						</span>
-						<span className="text-xs font-mandali font-bold text-base-content text-left max-[500px]:text-center">
+						<span className="text-xs font-mandali font-bold text-base-content text-center max-lg:text-left max-[500px]:text-center">
 							{personalInformation.description}
 						</span>
 					</div>

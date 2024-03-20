@@ -12,10 +12,10 @@ export const ServiceCard = ({ icons, title, description }: IProps) => {
 			<div
 				className={`flex-1 h-auto flex justify-start items-start flex-col gap-3`}
 			>
-				<h1 className={` text-xl font-mandali font-bold relative after:absolute after:content-[''] after:-bottom-1 after:left-0 after:w-20 after:h-1 after:rounded after:bg-primary`}>
+				<h1 className={`max-sm:text-base text-xl font-mandali font-bold relative after:absolute after:content-[''] after:-bottom-1 after:left-0 after:w-20 after:h-1 after:rounded after:bg-primary`}>
 					{title}
 				</h1>
-				<span className={`text-sm font-mandali`}>
+				<span className={`text-sm max-sm:text-xs font-mandali`}>
 					{description}
 				</span>
 			</div>

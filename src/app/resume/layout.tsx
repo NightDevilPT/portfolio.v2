@@ -14,9 +14,8 @@ export default function RootLayout({
 }>) {
 	return (
 		<div
-			className={`w-full h-full min-h-75 bg-base-100 rounded-md shadow-lg shadow-black/30 p-5`}
+			className={`w-full h-full min-h-75`}
 		>
-			<HeaderComponent title="Resume" />
 			{children}
 		</div>
 	);

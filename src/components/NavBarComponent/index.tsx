@@ -30,10 +30,10 @@ const navBars = [
 const NavBarComponent = () => {
 	return (
 		<div
-			className={`col-span-1 max-xl:col-span-2 h-auto max-lg:fixed max-lg:bottom-5 max-lg:z-50`}
+			className={`relative col-span-1 max-xl:col-span-2 h-auto max-lg:fixed max-lg:bottom-5 max-lg:z-50`}
 		>
 			<nav
-				className={`w-full h-auto flex justify-center items-center flex-col max-lg:flex-row gap-2 p-2 bg-base-100 max-lg:bg-transparent max-lg:backdrop-blur rounded shadow-lg shadow-black/30`}
+				className={`sticky top-0 w-full h-auto flex justify-center items-center flex-col max-lg:flex-row gap-2 p-2 bg-base-100 max-lg:bg-transparent max-lg:backdrop-blur rounded shadow-lg shadow-black/30`}
 			>
 				{navBars?.map((items: any, index: number) => {
 					return (

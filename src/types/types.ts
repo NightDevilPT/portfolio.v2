@@ -45,3 +45,28 @@ export interface InfoCardProps {
 	label:string;
 	text:string;
 }
+
+export interface educationProps {
+	title?:string;
+	start?:string;
+	end?:string;
+	description?:string;
+	grade?:number;
+	name?:string;
+	percentage?:number;
+	isLast?:boolean;
+}
+
+export interface experienceProps {
+	title?:string;
+	start?:string;
+	end?:string;
+	description?:string;
+	name?:string;
+	isLast?:boolean;
+}
+
+export interface resumeProps {
+	title:string;
+	data:educationProps[] | experienceProps[]
+}
