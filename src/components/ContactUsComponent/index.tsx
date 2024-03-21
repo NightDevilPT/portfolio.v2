@@ -114,7 +114,7 @@ export const ContactForm = () => {
 				></textarea>
 			</label>
 			<label className="w-full h-auto flex justify-end items-end">
-				<button className={`w-full h-auto text-base font-bold p-3 px-3 rounded border-[2px] border-base-content hover:bg-base-content hover:text-base-300 transition-all duration-300`}>Submit</button>
+				<button className={`w-full h-auto text-base font-bold p-3 px-3 rounded border-[2px] bg-base-content text-base-300 transition-all duration-300`}>Submit</button>
 			</label>
 		</React.Fragment>
 	);

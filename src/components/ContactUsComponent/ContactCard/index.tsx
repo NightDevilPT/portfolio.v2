@@ -7,7 +7,7 @@ export const ContactCards = ({ icons, title, text, href }: contactCardProps) => 
 			<h4 className="text-base font-bold">{title}</h4>
 			<p className="text-xs">{text}</p>
 			<a
-				className={`w-auto h-auto text-sm mt-1 font-bold p-1 px-3 rounded border-[2px] border-base-content hover:bg-base-content hover:text-base-300 transition-all duration-300`}
+				className={`w-auto h-auto text-sm mt-1 font-bold p-1 px-3 rounded bg-base-100 text-base-content transition-all duration-300`}
 				href={href}
 			>
 				Send Message
