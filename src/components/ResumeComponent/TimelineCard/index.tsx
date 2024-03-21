@@ -24,7 +24,7 @@ const TimelineCard = ({
 					className={`w-4 h-4 text-primary rounded-full bg-base-100 relative z-[1] top-2`}
 				/>
 			</div>
-			<div className="w-auto h-auto grid grid-cols-1 p-2 px-4 bg-base-200 rounded-md">
+			<div className="flex-1 h-auto grid grid-cols-1 p-2 px-4 bg-base-200 rounded-md">
 				<h1
 					className={`font-mandali text-base font-bold italic text-base-content`}
 				>
@@ -54,7 +54,7 @@ const TimelineCard = ({
 					className={`w-4 h-4 text-primary rounded-full bg-base-100 relative z-[1] top-2`}
 				/>
 			</div>
-			<div className="w-auto h-auto grid grid-cols-1 p-2 px-4 bg-base-200 rounded-md">
+			<div className="flex-1 h-auto grid grid-cols-1 p-2 px-4 bg-base-200 rounded-md">
 				<h1
 					className={`font-mandali text-base font-bold italic text-base-content`}
 				>

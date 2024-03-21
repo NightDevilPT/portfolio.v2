@@ -1,23 +1,38 @@
-
 /* @import url('https://fonts.googleapis.com/css2?family=Mandali&display=swap'); */
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
 	width: 100%;
 	height: 100vh;
 	overflow: hidden;
 	font-family: "Mandali", "sans-serif";
 }
 
-.border-gradient::after{
+.border-gradient::after {
 	position: absolute;
 	content: "";
 	left: -3px;
 	top: -3px;
 	width: calc(100% + 6px);
 	height: calc(100% + 6px);
-	z-index:-1;
+	z-index: -1;
+}
+
+.mapouter {
+	position: relative;
+	text-align: right;
+	width: 100%;
+	height: 400px;
+}
+.gmap_canvas {
+	overflow: hidden;
+	background: none !important;
+	width: 100%;
+	height: 400px;
+}
+.gmap_iframe {
+	height: 400px !important;
 }

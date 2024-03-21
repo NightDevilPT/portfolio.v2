@@ -70,3 +70,10 @@ export interface resumeProps {
 	title:string;
 	data:educationProps[] | experienceProps[]
 }
+
+export interface contactCardProps {
+	icons: any;
+	title: string;
+	text: string;
+	href: string;
+}

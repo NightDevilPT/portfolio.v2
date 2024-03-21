@@ -18,7 +18,7 @@ const personalInformation = {
 		{
 			icons: <MdEmail className={`w-6 h-6 min-w-6`} />,
 			label: "Email *",
-			text: "pawankumartadagsingh@gmail.com",
+			text: "pawankumar080399@gmail.com",
 		},
 		{
 			icons: <BsPhoneFill className={`w-6 h-6 min-w-6`} />,
