@@ -67,6 +67,7 @@ const ProjectComponents = () => {
 						github,
 					}: projectCardProps) => (
 						<ProjectCards
+							key={title + "-" + index}
 							title={title}
 							img={img}
 							description={description}
