@@ -77,3 +77,11 @@ export interface contactCardProps {
 	text: string;
 	href: string;
 }
+
+export interface projectCardProps {
+	img: any;
+	title: string;
+	description: string;
+	link: string;
+	github: string;
+}

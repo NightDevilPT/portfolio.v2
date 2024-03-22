@@ -26,7 +26,7 @@ const TimelineCard = ({
 			</div>
 			<div className="flex-1 h-auto grid grid-cols-1 p-2 px-4 bg-base-200 rounded-md">
 				<h1
-					className={`font-mandali text-base font-bold italic text-base-content`}
+					className={`font-mandali text-base font-bold italic text-base-content mb-3 relative after:absolute after:content-[''] after:-bottom-1 after:left-0 after:w-16 after:h-[4px] after:rounded after:bg-base-content`}
 				>
 					{name}{" "}
 				</h1>
@@ -56,7 +56,7 @@ const TimelineCard = ({
 			</div>
 			<div className="flex-1 h-auto grid grid-cols-1 p-2 px-4 bg-base-200 rounded-md">
 				<h1
-					className={`font-mandali text-base font-bold italic text-base-content`}
+					className={`font-mandali text-base font-bold italic text-base-content mb-3 relative after:absolute after:content-[''] after:-bottom-1 after:left-0 after:w-16 after:h-[4px] after:rounded after:bg-base-content`}
 				>
 					{name}{" "}
 				</h1>

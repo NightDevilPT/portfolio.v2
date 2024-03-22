@@ -7,7 +7,7 @@ import React from "react";
 const ThemeController = () => {
 	const {theme,toggleTheme} = useTheme()
 	return (
-		<label className="swap swap-rotate fixed bottom-5 left-5 bg-primary rounded-full p-1 animate-pulse">
+		<label className="swap swap-rotate fixed bottom-5 left-5 bg-primary rounded-full p-1 animate-pulse z-50">
 			{/* this hidden checkbox controls the state */}
 			<input
 				type="checkbox"
