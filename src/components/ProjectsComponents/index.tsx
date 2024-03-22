@@ -59,13 +59,16 @@ const ProjectComponents = () => {
 				className={`w-full h-auto grid grid-cols-[repeat(auto-fit,_minmax(320px,1fr))] max-sm:grid-cols-[repeat(auto-fit,_minmax(280px,1fr))] gap-3`}
 			>
 				{projectsData?.map(
-					({
-						title,
-						img,
-						description,
-						link,
-						github,
-					}: projectCardProps) => (
+					(
+						{
+							title,
+							img,
+							description,
+							link,
+							github,
+						}: projectCardProps,
+						index: number
+					) => (
 						<ProjectCards
 							key={title + "-" + index}
 							title={title}
