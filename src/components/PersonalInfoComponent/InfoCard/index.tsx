@@ -10,11 +10,11 @@ const InforCard = ({icons,label,text}:InfoCardProps) => {
 				{icons as any}
 			</span>
 			<div className={`w-full flex justify-start items-start flex-col`}>
-				<span className={`text-xs font-bold text-base-content`}>
+				<span className={`text-xs font-bold text-base-content font-mandali`}>
 					{label}
 				</span>
 				<span
-					className={`text-xs font-bold text-base-content text-ellipsis overflow-hidden`}
+					className={`text-xs font-bold text-base-content text-ellipsis overflow-hidden font-mandali`}
 				>
 					{text}
 				</span>

@@ -8,7 +8,7 @@ const WhatIDoComponent = () => {
 			className={`w-full h-auto flex justify-start items-start flex-col gap-2 mt-3`}
 		>
 			<h1
-				className={`text-xl font-bold relative after:absolute after:content-[''] after:-bottom-2 after:left-0 after:w-28 after:h-1 after:rounded after:bg-primary`}
+				className={`text-xl font-bold relative after:absolute after:content-[''] after:-bottom-2 after:left-0 after:w-28 after:h-1 after:rounded after:bg-primary font-mandali`}
 			>
 				What I'm Doing
 			</h1>

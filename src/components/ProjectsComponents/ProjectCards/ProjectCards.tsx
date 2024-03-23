@@ -20,6 +20,7 @@ ProjectCards = ({
 					src={img}
 					alt="project-image"
 					className={`w-full h-full object-cover`}
+					placeholder="blur"
 				/>
 			</div>
 			<div

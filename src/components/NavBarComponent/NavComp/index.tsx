@@ -22,7 +22,7 @@ const NavbarCard = ({ icons, text, isActive }: navBarProps) => {
 				}`}
 			>
 				{icons}
-				<span className={`text-xs font-bold max-sm:hidden`}>
+				<span className={`text-xs font-bold max-sm:hidden font-mandali`}>
 					{text}
 				</span>
 			</button>

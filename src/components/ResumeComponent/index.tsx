@@ -8,7 +8,7 @@ const ResumeComponent = ({ title, data }: resumeProps) => {
 			className={`w-full h-auto flex justify-start items-start flex-col gap-2 mt-3`}
 		>
 			<h1
-				className={`text-xl font-bold relative after:absolute after:content-[''] after:-bottom-2 after:left-0 after:w-16 after:h-1 after:rounded after:bg-primary`}
+				className={`text-xl font-bold font-mandali relative after:absolute after:content-[''] after:-bottom-2 after:left-0 after:w-16 after:h-1 after:rounded after:bg-primary`}
 			>
 				{title}
 			</h1>
