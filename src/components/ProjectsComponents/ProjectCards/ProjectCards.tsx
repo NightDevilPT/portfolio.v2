@@ -48,7 +48,7 @@ ProjectCards = ({
 					</a>
 					<a
 						className={`p-1 px-3 rounded bg-base-content text-base-300 text-sm font-bold flex justify-center items-center gap-2`}
-						href={github}
+						href={link}
 					>
 						<MdOutlinePreview className={`w-4 h-4`} />
 						Live
