@@ -49,7 +49,11 @@ export const experienceData = [
 		name: "Misemind Technologies",
 		start: "2023",
 		end: "Present",
-		description:
-			"I'm currently a valued member of the Misemind Technology team, where I contribute my skills and expertise as Fullstack Developer",
+		description:[
+			'Spearheaded the development of responsive web designs, ensuring seamless user experiences across various devices, utilizing React, NextJS, Angular and Styled Components within a TypeScript environment.',
+			'Worked on Strapi , a headless CMS, with frontend applications. Developed custom APIs in Strapi to handle specific frontend requirements and perform custom tasks.',
+			'Worked on NestJS with CQRS pattern to architect and develop robust solutions.',
+			'Worked on POC (Proof of Concept)'
+		]
 	},
 ];

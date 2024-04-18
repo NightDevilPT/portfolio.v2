@@ -84,4 +84,5 @@ export interface projectCardProps {
 	description: string;
 	link: string;
 	github: string;
+	setShow?:React.Dispatch<React.SetStateAction<boolean>>;
 }

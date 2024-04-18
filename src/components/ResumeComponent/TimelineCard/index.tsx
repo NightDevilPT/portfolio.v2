@@ -37,7 +37,9 @@ const TimelineCard = ({
 						: ""}
 					{grade && grade > 0 ? `, CGPA - ${grade}` : ""}
 				</span>
-				<span className={`text-sm text-base-content italic font-mandali`}>
+				<span
+					className={`text-sm text-base-content italic font-mandali`}
+				>
 					{description}
 				</span>
 			</div>
@@ -63,9 +65,24 @@ const TimelineCard = ({
 				<span className={`text-sm italic text-primary font-mandali`}>
 					( {start} - {end} )
 				</span>
-				<span className={`text-sm text-base-content italic font-mandali`}>
-					{description}
-				</span>
+				{!Array.isArray(description) ? (
+					<span
+						className={`text-sm text-base-content italic font-mandali`}
+					>
+						{description}
+					</span>
+				) : (
+					<ul>
+						{description.map((items: string, index: number) => (
+							<li
+								className={`text-sm italic text-base-content font-mandali mt-2`}
+								key={items + "-" + index}
+							>
+								{items}
+							</li>
+						))}
+					</ul>
+				)}
 			</div>
 		</li>
 	);

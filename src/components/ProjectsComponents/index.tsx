@@ -1,12 +1,16 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import moviehub from "../../assets/moviehub.png";
 import weather from "../../assets/weatherApp.png";
 import calculator from "../../assets/calculatorApp.png";
 import dashboard from "../../assets/dashboard.png";
 import portfolio from "../../assets/portfolio.png";
+import blogshpereBackend from "../../assets/blogsphere-bacckend.png";
 
 import { projectCardProps } from "@/types/types";
 import { ProjectCards } from "./ProjectCards/ProjectCards";
+import HoverProjectCard from "./HoverProjectCard";
 
 const projectsData = [
 	{
@@ -15,6 +19,13 @@ const projectsData = [
 		description: `This portfolio showcases my work. It's built with Next.js, DaisyUI, and Tailwind CSS, ensuring a polished and professional presentation of my skills and projects.`,
 		link: "https://pawan-portfolio-v2.vercel.app/",
 		github: "https://github.com/NightDevilPT/portfolio.v2",
+	},
+	{
+		img: blogshpereBackend,
+		title: "Blogspher Backend - NestJS",
+		description: `Developed a robust backend system using NestJS framework. Implemented the Command Query Responsibility Segregation (CQRS) pattern for improved code. Implemented cron jobs to automate scheduled tasks, ensuring timely publication of blogs at specified intervals.`,
+		link: "",
+		github: "https://github.com/NightDevilPT/blogsphere-nestjs.v2",
 	},
 	{
 		img: moviehub,
@@ -34,8 +45,8 @@ const projectsData = [
 		img: weather,
 		title: "Weather Web Application",
 		description: `The Weather web application provides users with real-time weather information for any country. It includes a theme changer feature for personalized user experience.`,
-		link: "https://nightdevilpt.github.io/react-weatherapp/",
-		github: "https://github.com/NightDevilPT/react-weatherapp",
+		link: "https://nextjs-weather-webapp.vercel.app/",
+		github: "https://github.com/NightDevilPT/nextjs-weather-webapp",
 	},
 	{
 		img: calculator,
@@ -47,6 +58,14 @@ const projectsData = [
 ];
 
 const ProjectComponents = () => {
+	const [showData, setShowData] = useState<projectCardProps>({
+		img: "",
+		title: "",
+		description: "",
+		github: "",
+		link: "",
+	});
+	const [show, setShow] = useState<boolean>(false);
 	return (
 		<div
 			className={`w-full h-auto flex justify-start items-start gap-5 px-2 flex-col`}
@@ -56,7 +75,7 @@ const ProjectComponents = () => {
 				expertise in web development.
 			</span>
 			<div
-				className={`w-full h-auto grid grid-cols-[repeat(auto-fit,_minmax(320px,1fr))] max-sm:grid-cols-[repeat(auto-fit,_minmax(280px,1fr))] gap-3`}
+				className={`w-full h-auto grid grid-cols-2 max-xl:grid-cols-1 max-lg:grid-cols-2 max-md:grid-cols-1 gap-5`}
 			>
 				{projectsData?.map(
 					(
@@ -69,17 +88,40 @@ const ProjectComponents = () => {
 						}: projectCardProps,
 						index: number
 					) => (
-						<ProjectCards
+						<button
 							key={title + "-" + index}
-							title={title}
-							img={img}
-							description={description}
-							link={link}
-							github={github}
-						/>
+							onClick={() => {
+								setShowData({
+									title,
+									img,
+									description,
+									link,
+									github,
+								});
+								setShow(true);
+							}}
+						>
+							<ProjectCards
+								title={title}
+								img={img}
+								description={description}
+								link={link}
+								github={github}
+							/>
+						</button>
 					)
 				)}
 			</div>
+			{show && (
+				<HoverProjectCard
+					title={showData?.title}
+					description={showData?.description}
+					img={showData?.img}
+					link={showData?.link}
+					github={showData?.github}
+					setShow={setShow}
+				/>
+			)}
 		</div>
 	);
 };
