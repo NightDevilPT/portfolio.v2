@@ -1,7 +1,6 @@
 import HeaderComponent from "@/components/HeaderComponent";
 import ResumeComponent from "@/components/ResumeComponent";
 import { educatonData, experienceData } from "@/constants/constants";
-import { educationProps } from "@/types/types";
 import React from "react";
 
 const page = () => {

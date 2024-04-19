@@ -36,39 +36,38 @@ export enum Theme {
 	Winter = "winter",
 	Dim = "dim",
 	Nord = "nord",
-	Sunset = "sunset"
-  }
-  
+	Sunset = "sunset",
+}
 
 export interface InfoCardProps {
-	icons:any;
-	label:string;
-	text:string;
+	icons: any;
+	label: string;
+	text: string;
 }
 
 export interface educationProps {
-	title?:string;
-	start?:string;
-	end?:string;
-	description?:string;
-	grade?:number;
-	name?:string;
-	percentage?:number;
-	isLast?:boolean;
+	title?: string;
+	start?: string;
+	end?: string;
+	description?: string | string[];
+	grade?: number;
+	name?: string;
+	percentage?: number;
+	isLast?: boolean;
 }
 
 export interface experienceProps {
-	title?:string;
-	start?:string;
-	end?:string;
-	description?:string;
-	name?:string;
-	isLast?:boolean;
+	title?: string;
+	start?: string;
+	end?: string;
+	description?: string | string[];
+	name?: string;
+	isLast?: boolean;
 }
 
 export interface resumeProps {
-	title:string;
-	data:educationProps[] | experienceProps[]
+	title: string;
+	data: educationProps[] | experienceProps[];
 }
 
 export interface contactCardProps {
@@ -84,5 +83,5 @@ export interface projectCardProps {
 	description: string;
 	link: string;
 	github: string;
-	setShow?:React.Dispatch<React.SetStateAction<boolean>>;
+	setShow?: React.Dispatch<React.SetStateAction<boolean>>;
 }

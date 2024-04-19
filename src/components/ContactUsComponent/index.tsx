@@ -62,7 +62,7 @@ const ContactUsComponent = () => {
 						<ContactForm />
 					</div>
 				</div>
-				<div className={`w-full h-auto mt-3`}>
+				{/* <div className={`w-full h-auto mt-3`}>
 					<div className="mapouter">
 						<div className="gmap_canvas">
 							<iframe
@@ -73,7 +73,7 @@ const ContactUsComponent = () => {
 							<a href="https://strandsgame.net/">Strands</a>
 						</div>
 					</div>
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);
