@@ -7,6 +7,7 @@ import calculator from "../../assets/calculatorApp.png";
 import dashboard from "../../assets/dashboard.png";
 import portfolio from "../../assets/portfolio.png";
 import blogshpereBackend from "../../assets/blogsphere-bacckend.png";
+import blogshpereFrontend from "../../assets/blogsphere-frontend.png";
 
 import { projectCardProps } from "@/types/types";
 import { ProjectCards } from "./ProjectCards/ProjectCards";
@@ -19,6 +20,15 @@ const projectsData = [
 		description: `This portfolio showcases my work. It's built with Next.js, DaisyUI, and Tailwind CSS, ensuring a polished and professional presentation of my skills and projects.`,
 		link: "https://pawan-portfolio-v2.vercel.app/",
 		github: "https://github.com/NightDevilPT/portfolio.v2",
+		isProgress:false
+	},
+	{
+		img: blogshpereFrontend,
+		title: "Blogspher Frontend - NextJS",
+		description: `I deployed my Blogsphere frontend project on Vercel, utilizing Next.js for development. To enhance the user interface, I integrated TailwindCSS for styling and ShadcnUI for creating dynamic components. Additionally, I employed Redux for efficient state management throughout the application.`,
+		link: "https://blogsphere-nextjs-v2.vercel.app/",
+		github: "https://github.com/NightDevilPT/blogsphere-nextjs.v2",
+		isProgress:true
 	},
 	{
 		img: blogshpereBackend,
@@ -26,6 +36,7 @@ const projectsData = [
 		description: `Developed a robust backend system using NestJS framework. Implemented the Command Query Responsibility Segregation (CQRS) pattern for improved code. Implemented cron jobs to automate scheduled tasks, ensuring timely publication of blogs at specified intervals.`,
 		link: "",
 		github: "https://github.com/NightDevilPT/blogsphere-nestjs.v2",
+		isProgress:true
 	},
 	{
 		img: moviehub,
@@ -33,6 +44,7 @@ const projectsData = [
 		description: `The MovieHUB web application allows users to search for movies, TV shows, and people's data. Users can customize themes, font families, and utilize the TMDB API for enhanced functionality.`,
 		link: "https://movie-hub-git-main-nightdevilpt.vercel.app/",
 		github: "https://github.com/NightDevilPT/movie-hub",
+		isProgress:false
 	},
 	{
 		img: dashboard,
@@ -40,6 +52,7 @@ const projectsData = [
 		description: `The Job Desktop Dashboard is a front-end design developed using ReactJS. It features a custom Carousel Effect implementation without the need for Swiper.JS.`,
 		link: "https://dashboard-pc-design-git-main-nightdevilpt.vercel.app/",
 		github: "https://github.com/NightDevilPT/dashboard-pc-design",
+		isProgress:false
 	},
 	{
 		img: weather,
@@ -47,6 +60,7 @@ const projectsData = [
 		description: `The Weather web application provides users with real-time weather information for any country. It includes a theme changer feature for personalized user experience.`,
 		link: "https://nextjs-weather-webapp.vercel.app/",
 		github: "https://github.com/NightDevilPT/nextjs-weather-webapp",
+		isProgress:false
 	},
 	{
 		img: calculator,
@@ -54,6 +68,7 @@ const projectsData = [
 		description: `The Calculator web application enables users to perform basic calculations. Users can customize the theme and button colors according to their preferences.`,
 		link: "https://nightdevilpt.github.io/react-calculator/",
 		github: "https://github.com/NightDevilPT/react-calculator",
+		isProgress:false
 	},
 ];
 
@@ -85,6 +100,7 @@ const ProjectComponents = () => {
 							description,
 							link,
 							github,
+							isProgress
 						}: projectCardProps,
 						index: number
 					) => (
@@ -97,6 +113,7 @@ const ProjectComponents = () => {
 									description,
 									link,
 									github,
+									isProgress
 								});
 								setShow(true);
 							}}
@@ -119,6 +136,7 @@ const ProjectComponents = () => {
 					img={showData?.img}
 					link={showData?.link}
 					github={showData?.github}
+					isProgress={showData.isProgress}
 					setShow={setShow}
 				/>
 			)}
