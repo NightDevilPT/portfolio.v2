@@ -8,6 +8,7 @@ import dashboard from "../../assets/dashboard.png";
 import portfolio from "../../assets/portfolio.png";
 import blogshpereBackend from "../../assets/blogsphere-bacckend.png";
 import blogshpereFrontend from "../../assets/blogsphere-frontend.png";
+import gamies from "../../assets/gamies.png";
 
 import { projectCardProps } from "@/types/types";
 import { ProjectCards } from "./ProjectCards/ProjectCards";
@@ -21,6 +22,14 @@ const projectsData = [
 		link: "https://pawan-portfolio-v2.vercel.app/",
 		github: "https://github.com/NightDevilPT/portfolio.v2",
 		isProgress:false
+	},
+	{
+		img: gamies,
+		title: "Gamies Frontend - NextJS",
+		description: `I've deployed my frontend project, Gamies Gamers World, on Vercel, leveraging Next.js for development. To enrich the user experience, I incorporated TailwindCSS for styling and NextUI for building dynamic components. Moreover, I utilized Redux for streamlined state management across the application. As for the API, I integrated RAWG.io to fetch the latest game data.`,
+		link: "https://gamies-nextjs.vercel.app/",
+		github: "https://github.com/NightDevilPT/gamies-nextjs",
+		isProgress:true
 	},
 	{
 		img: blogshpereFrontend,
