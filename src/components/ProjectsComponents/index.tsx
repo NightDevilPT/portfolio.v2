@@ -9,6 +9,7 @@ import portfolio from "../../assets/portfolio.png";
 import blogshpereBackend from "../../assets/blogsphere-bacckend.png";
 import blogshpereFrontend from "../../assets/blogsphere-frontend.png";
 import gamies from "../../assets/gamies.png";
+import storageFrontend from '../../assets/storage-provider.png';
 
 import { projectCardProps } from "@/types/types";
 import { ProjectCards } from "./ProjectCards/ProjectCards";
@@ -29,6 +30,14 @@ const projectsData = [
 		description: `I've deployed my frontend project, Gamies Gamers World, on Vercel, leveraging Next.js for development. To enrich the user experience, I incorporated TailwindCSS for styling and NextUI for building dynamic components. Moreover, I utilized Redux for streamlined state management across the application. As for the API, I integrated RAWG.io to fetch the latest game data.`,
 		link: "https://gamies-nextjs.vercel.app/",
 		github: "https://github.com/NightDevilPT/gamies-nextjs",
+		isProgress:true
+	},
+	{
+		img: storageFrontend,
+		title: "Cloudify Storage Provider - NextJS",
+		description: `Introducing Cloudify the Storage Provider, my latest project. It is built with Next.js, styled using Tailwind CSS and NextUI, and uses Redux for efficient state management. The project is deployed on Vercel, ensuring a seamless and performant user experience.`,
+		link: "https://file-system-client.vercel.app/",
+		github: "https://github.com/NightDevilPT/file-system-client",
 		isProgress:true
 	},
 	{
